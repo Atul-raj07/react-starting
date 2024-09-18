@@ -1,11 +1,13 @@
 import React from "react";
 import Card from "./components/Card";
-function App(){
+function App()
+{
   return (
-  <>
-    <h1>hello atul</h1>
-  </>
-)
+    
+    <>
+    <Card />
+    </>
+     )
 }
 
 export default App;
