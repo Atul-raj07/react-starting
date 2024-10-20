@@ -35,10 +35,10 @@ const Data = [
   },
   
 ];
- function click(e) {
-   return console.log("hogya bas kar bc");
+//  function click(e) {
+//    return console.log();
    
- }
+//  }
 
   return (
       <div className="h-screen w-full px-10 flex items-center gap-10 justify-between">
@@ -55,7 +55,7 @@ const Data = [
           <h2 className="font-bold px-2 text-xl mb-4">{val.name}</h2>
           <p className="px-2">{val.desc}
           </p>
-          <button onClick={click} className= {`${val.stock ? 'bg-green-600' : 'bg-red-600'} mx-2 px-4 py-2`}>
+          <button onClick={()=> !val.stock} className= {`${val.stock ? 'bg-green-600' : 'bg-red-600'} mx-2 px-4 py-2`}>
             {val.stock ? "stocked" : "unstocked"}
             </button>
         </div>
